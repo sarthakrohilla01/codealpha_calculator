@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-container">
+                <div class="operation-display" id="operation-display"></div>
+                <div class="main-display" id="main-display">0</div>
+            </div>
+            
+            <div class="buttons-grid">
+                <!-- Row 1 -->
+                <button class="btn special-btn clear-btn" data-action="clear">Clear</button>
+                <button class="btn special-btn" data-action="backspace">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+                        <line x1="18" y1="9" x2="12" y2="15"/>
+                        <line x1="12" y1="9" x2="18" y2="15"/>
+                    </svg>
+                </button>
+                <button class="btn operator-btn" data-action="divide">÷</button>
+                
+                <!-- Row 2 -->
+                <button class="btn number-btn" data-number="7">7</button>
+                <button class="btn number-btn" data-number="8">8</button>
+                <button class="btn number-btn" data-number="9">9</button>
+                <button class="btn operator-btn" data-action="multiply">×</button>
+                
+                <!-- Row 3 -->
+                <button class="btn number-btn" data-number="4">4</button>
+                <button class="btn number-btn" data-number="5">5</button>
+                <button class="btn number-btn" data-number="6">6</button>
+                <button class="btn operator-btn" data-action="subtract">−</button>
+                
+                <!-- Row 4 -->
+                <button class="btn number-btn" data-number="1">1</button>
+                <button class="btn number-btn" data-number="2">2</button>
+                <button class="btn number-btn" data-number="3">3</button>
+                <button class="btn operator-btn" data-action="add">+</button>
+                
+                <!-- Row 5 -->
+                <button class="btn number-btn zero-btn" data-number="0">0</button>
+                <button class="btn number-btn" data-action="decimal">.</button>
+                <button class="btn equals-btn" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
